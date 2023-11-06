@@ -4,9 +4,6 @@ UPDATE Rooms
 SET IsAvailable = FALSE
 WHERE RoomID = 1;
 
-
-Select RoomID, IsAvailable from Rooms;
-
 DELETE FROM RoomTypes WHERE RoomTypeID = 5;
 DELETE FROM Rooms WHERE RoomID = 5;
 DELETE FROM Guests WHERE GuestID = 5;
