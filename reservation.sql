@@ -50,4 +50,13 @@ CREATE TABLE Reservations (
     FOREIGN KEY (RoomID) REFERENCES Rooms(RoomID)
 );
 
+-- Create table for user information
+CREATE TABLE Users (
+    UserID INT PRIMARY KEY AUTO_INCREMENT,
+    Username VARCHAR(50) UNIQUE NOT NULL,
+    Password VARCHAR(255) NOT NULL,
+    Role VARCHAR(50) NOT NULL
+);
+
+
 SHOW TABLES;
